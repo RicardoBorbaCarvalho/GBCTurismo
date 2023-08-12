@@ -240,3 +240,30 @@ a:link:hover {
   text-align: center;
   line-height: 20px;
 }
+
+.container-roupas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.container-roupas img:hover {
+  transform: scale(0.9) translateY(5px);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.roupa {
+  background-color: #daa520;
+  color: #fff;
+}
+
+.roupa img {
+  width: 250px;
+  height: auto;
+  transition: 0.35s ease;
+}
