@@ -10,9 +10,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 #todo {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 main {
@@ -222,8 +221,8 @@ a:link:hover {
 .article_img {
   float: left;
   margin: 0 auto;
-  width: 100%;
-  max-width: 300px;
+  width: 450px;
+  height: 450px;
 }
 .missao {
   width: 100%;
@@ -241,7 +240,7 @@ a:link:hover {
   line-height: 20px;
 }
 
-.container-roupas {
+.container-viagens {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -251,18 +250,18 @@ a:link:hover {
   margin-top: 3rem;
 }
 
-.container-roupas img:hover {
+.container-viagens img:hover {
   transform: scale(0.9) translateY(5px);
   cursor: pointer;
   transition: 0.3s;
 }
 
-.roupa {
+.viagens {
   background-color: #daa520;
   color: #fff;
 }
 
-.roupa img {
+.viagens img {
   width: 250px;
   height: auto;
   transition: 0.35s ease;
