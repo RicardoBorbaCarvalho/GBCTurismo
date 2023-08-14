@@ -9,12 +9,8 @@ body {
   padding: 36px;
   font-family: "Open Sans", sans-serif;
 }
-#todo {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
 main {
+  /*display: flex;*/
   flex-direction: row;
   margin-top: 50px;
   min-height: 450px;
@@ -51,6 +47,7 @@ main aside {
 nav a {
   display: inline-block;
   padding: 10px 20px;
+  /*  border-radius: 20px;*/
   background-color: #c99624;
   color: #c99624;
   text-decoration: none;
@@ -58,8 +55,8 @@ nav a {
   margin-right: 10px;
 }
 nav a:hover {
-  background-color: #c99624;
-  color: #fffdfd;
+  background-color: #daa520;
+  color: #000000;
 }
 h1 {
   font-size: 46px;
@@ -89,6 +86,7 @@ p {
 }
 li {
   display: inline-block;
+  /*/max-width: 200px;*/
   text-align: center;
 }
 .slider {
@@ -193,7 +191,7 @@ footer {
   margin-top: auto;
 }
 strong {
-  font-size: 20px;
+  font-size: 20px; /* Defina o tamanho desejado para o <h1> */
   font-family: "Open Sans", sans-serif;
   color: rgb(203, 150, 36);
   text-align: center;
@@ -204,10 +202,12 @@ a:link {
   color: rgb(203, 150, 36);
   text-decoration: none;
   font-weight: bold;
+  /*border: 4px solid rgb(203, 150, 36);*/
+  /*border-radius: 20px;*/
   padding: 8px 16px;
   display: inline-block;
   margin-right: 10px;
-  text-align: center;
+  text-align: center; /* Adiciona para centralizar o texto dentro do botão */
 }
 a:link:hover {
   background: #daa520;
@@ -221,8 +221,8 @@ a:link:hover {
 .article_img {
   float: left;
   margin: 0 auto;
-  width: 450px;
-  height: 450px;
+  width: 100%;
+  max-width: 300px;
 }
 .missao {
   width: 100%;
@@ -233,11 +233,17 @@ a:link:hover {
   margin: 0 auto;
 }
 .missao p {
+  text-align: justify;
   line-height: 20px;
 }
 .contato p {
-  text-align: center;
+  text-align: justify;
   line-height: 20px;
+}
+#todo {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .container-viagens {
