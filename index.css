@@ -281,7 +281,7 @@ footer {
   margin-top: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   html {
     height: auto;
     background-color: rgb(230, 230, 230);
