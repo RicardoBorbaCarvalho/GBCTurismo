@@ -74,11 +74,11 @@ h3 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
 }
-h5{
+h5 {
   font-size: 20px;
   color: #000000;
 }
-h6{
+h6 {
   font-size: 14px;
   color: #ffffff;
 }
@@ -234,7 +234,7 @@ a:link:hover {
 .container-viagens img:hover {
   transform: scale(0.9) translateY(5px);
   cursor: pointer;
-  transition: 0.3s;  
+  transition: 0.3s;
 }
 .viagens {
   background-color: #daa520;
@@ -247,12 +247,12 @@ a:link:hover {
   transition: 0.35s ease;
   border-radius: 10px;
 }
-.informações{
+.informações {
   text-align: center;
   display: center;
   justify: center;
 }
-.texto_informações{
+.texto_informações {
   font-size: 20px;
   font-weight: 300;
 }
@@ -281,13 +281,76 @@ footer {
   margin-top: auto;
 }
 
-
-
-
-
 @media (max-width: 600px) {
   html {
     height: auto;
     background-color: rgb(230, 230, 230);
+  }
+  main img {
+    display: center;
+    margin: 0 auto;
+    float: center;
+    width: 532px;
+    height: 400px;
+  }
+  body {
+    background-color: rgb(255, 255, 255);
+    max-width: 1800px;
+    padding: 10px;
+    margin: 0 auto;
+    font-family: "Open Sans", sans-serif;
+  }
+  main {
+    /*display: flex;*/
+    flex-direction: row;
+    margin-top: 50px;
+    min-height: 450px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .slider {
+    overflow: hidden;
+    text-align: center;
+    height: 500px;
+  }
+  .slider > .slider-content {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 500ms ease;
+  }
+  .slider > .slider-content > .slider-item {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .slider-item img {
+    width: 450px;
+    height: 350px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .container-viagens {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .container-viagens img:hover {
+    transform: scale(0.9) translateY(5px);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .viagens {
+    background-color: #daa520;
+    color: #fff;
+    border-radius: 10px;
+  }
+  .viagens img {
+    width: 150px;
+    height: 150px;
+    transition: 0.35s ease;
+    border-radius: 10px;
   }
 }
