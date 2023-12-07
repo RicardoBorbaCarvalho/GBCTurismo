@@ -286,11 +286,11 @@ footer {
     height: auto;
     background-color: rgb(230, 230, 230);
   }
-  main img {
+ main img {
     display: center;
     margin: 0 auto;
     float: center;
-    width: 532px;
+    width: 410px;
     height: 400px;
   }
   body {
