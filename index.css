@@ -287,10 +287,7 @@ footer {
     background-color: rgb(230, 230, 230);
   }
   main img {
-    display: center;
-    margin: 0 auto;
-    float: center;
-    max-width: 320px;
+    max-width: 362px;
     max-height: 450px;
     width: auto;
     height: auto;
