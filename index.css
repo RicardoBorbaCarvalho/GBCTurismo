@@ -282,7 +282,7 @@ footer {
 }
 
 
-
+/* responsividade celulares */
 @media (max-width: 450px) {
   html {
     height: auto;
@@ -296,18 +296,48 @@ footer {
     margin: 0 auto;
     font-family: "Open Sans", sans-serif;
   }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    height: 50px;
+  }
+  header img {
+    width: 100px;
+    height: 100px;
+  }
+  nav a {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #c99624;
+    color: #c99624;
+    text-decoration: none;
+    font-weight: 100;
+    margin: 0px;
+    height: 1px;
+  }
+  nav a:hover {
+    background-color: #daa520;
+    color: #000000;
+  }
+  a {
+    font-size: 12px;
+    margin: 0 180px;
+  }
   main {
     /*display: flex;*/
     flex-direction: row;
     margin-top: 50px;
     min-height: 450px;
     font-family: "Open Sans", sans-serif;
-  }  
+  }
   main img {
-    width: 264px;
+    width: 370px;
     height: 350px;
   }
- .slider {
+  .slider {
     overflow: hidden;
     text-align: center;
     height: 350px;
@@ -335,13 +365,12 @@ footer {
     height: 100%;
     /* fill, preenche todo o elemento com o conteúdo da imagem, mantendo as dimensões definidas para o elemento, não a proporção da imagem; */
     object-fit: fill;
-  .container > .container-content {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    transition: all 500ms ease;
-  }
-
+    .container > .container-content {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      transition: all 500ms ease;
+    }
   }
   .container-viagens img:hover {
     transform: scale(0.9) translateY(5px);
@@ -368,37 +397,9 @@ footer {
     transition: 0.35s ease;
     border-radius: 10px;
   }
-    header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 20px;
-  }
-  header img {
-    width: 50px;
-    height: 50px;
-  }
 
-  nav a {
-    display: inline-block;
-    padding: 10px 20px;
-    /*  border-radius: 20px;*/
-    background-color: #c99624;
-    color: #c99624;
-    text-decoration: none;
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  nav a:hover {
-    background-color: #daa520;
-    color: #000000;
-  }
-  a{
-    font-size: 11px;
-  }
   .informações {
-    margin:;
+    margin: ;
     text-align: center;
     display: center;
     justify: center;
@@ -407,13 +408,10 @@ footer {
     font-size: 14px;
     font-weight: 300;
   }
-  
 }
 
-
-
 /* responsividade tablets */
-@media (min-width: 768px) and (max-width: 1024){
+@media (min-width: 768px) and (max-width: 1024) {
   html {
     height: auto;
     background-color: rgb(230, 230, 230);
@@ -484,7 +482,7 @@ footer {
     transition: 0.35s ease;
     border-radius: 10px;
   }
-    header {
+  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -510,11 +508,11 @@ footer {
     background-color: #daa520;
     color: #000000;
   }
-  a{
+  a {
     font-size: 11px;
   }
   .informações {
-    margin:;
+    margin: ;
     text-align: center;
     display: center;
     justify: center;
@@ -523,5 +521,4 @@ footer {
     font-size: 14px;
     font-weight: 300;
   }
-  
 }
